@@ -4,12 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Mon premier composant</title>
+        <title>CRUDAnimals</title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>        
         <div id="app">
-            <h1>Application CRUD laravel+VueJS</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><h1>Application CRUD laravel+VueJS</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    {{-- <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> --}}
+                  </ul>
+                </div>
+              </nav>
             <div class="container">
                 <router-view></router-view>
             </div>
